@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "93b65e18-f93b-404f-9f73-164558314570",
+		"name": "health-check-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21763656"
+	},
+	"item": [
+		{
+			"name": "health check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "health check",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/demo-api/api/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"demo-api",
+								"api",
+								"health"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Jul 2024 16:55:09 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Running\",\n    \"version\": \"r.master.9999\"\n}"
+				}
+			]
+		}
+	]
+}

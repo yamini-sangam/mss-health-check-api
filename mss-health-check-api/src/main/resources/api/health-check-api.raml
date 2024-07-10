@@ -1,0 +1,16 @@
+#%RAML 1.0
+
+title: health-check-api
+documentation:
+ - !include documentations/health-check-api.raml
+description: This API is to demostrate and understand cheatseat API.
+version: v1
+baseUri: https://{environment}.yamini.localhost.nip.io/demo-api/{version}/
+mediaType: application/json
+protocols: [HTTPS]
+
+resourceTypes:
+  health: !include ./resourceTypes/health.raml
+
+/health:
+  type: health
